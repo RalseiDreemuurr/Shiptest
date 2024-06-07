@@ -1174,6 +1174,10 @@
 "ex" = (
 /turf/closed/indestructible/reinforced,
 /area/outpost/cargo/office)
+"ey" = (
+/obj/structure/sign/elysim,
+/turf/closed/indestructible/reinforced,
+/area/outpost/crew/canteen)
 "ez" = (
 /obj/effect/turf_decal/siding/wood{
 	dir = 10
@@ -7643,9 +7647,6 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/sign/elysim_wall_seal{
-	pixel_x = 2
-	},
 /turf/open/floor/carpet/nanoweave,
 /area/outpost/crew/canteen)
 "AS" = (
@@ -23795,7 +23796,7 @@ gP
 BC
 gP
 gP
-gP
+ey
 AR
 JB
 gP

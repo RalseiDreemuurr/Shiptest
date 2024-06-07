@@ -377,6 +377,9 @@
 /obj/machinery/recharger,
 /obj/structure/cable,
 /obj/machinery/power/apc/auto_name/directional/south,
+/obj/item/coin/titanium{
+	pixel_x = 11
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "fJ" = (
@@ -3987,10 +3990,6 @@
 /obj/item/melee/chainofcommand{
 	pixel_x = 7;
 	pixel_y = 8
-	},
-/obj/item/coin/adamantine{
-	pixel_x = 5;
-	pixel_y = 4
 	},
 /turf/open/floor/carpet/royalblue,
 /area/ship/crew)
