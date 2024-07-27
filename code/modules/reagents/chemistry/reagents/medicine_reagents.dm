@@ -1310,8 +1310,6 @@
 		M.adjustStaminaLoss(-3 * REM, 0)
 		M.jitteriness = min(max(0, M.jitteriness + 3), 30)
 		M.adjustOrganLoss(ORGAN_SLOT_BRAIN, 2 * REM, 150)
-		if(prob(10))
-			M.say(pick("Yeah, well, you know, that's just, like, uh, your opinion, man.", "Am I glad he's frozen in there and that we're out here, and that he's the sheriff and that we're frozen out here, and that we're in there, and I just remembered, we're out here. What I wanna know is: Where's the caveman?", "It ain't me, it ain't me...", "Make love, not war!", "Stop, hey, what's that sound? Everybody look what's going down...", "Do you believe in magic in a young girl's heart?"), forced = /datum/reagent/medicine/earthsblood)
 	M.druggy = min(max(0, M.druggy + 10), 15) //See above
 	..()
 	. = 1
@@ -2065,15 +2063,28 @@
 	return TRUE
 
 /datum/reagent/medicine/lavaland_extract/overdose_process(mob/living/M)		// Thanks to actioninja
+	// [CELADON-ADD] - CELADON_BALANCE	
+	var/phain = 1
+	// [/CELADON-ADD]
 	if(prob(2) && iscarbon(M))
 		var/selected_part = pick(BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 		var/obj/item/bodypart/bp = M.get_bodypart(selected_part)
 		if(bp)
 			M.visible_message("<span class='warning'>[M] feels a spike of pain!!</span>", "<span class='danger'>You feel a spike of pain!!</span>")
 			bp.receive_damage(0, 0, 200)
-		else	//SUCH A LUST FOR REVENGE!!!
-			to_chat(M, "<span class='warning'>A phantom limb hurts!</span>")
-			M.say("Why are we still here, just to suffer?", forced = /datum/reagent/medicine/lavaland_extract)
+		// [CELADON-EDIT] - CELADON_BALANCE
+		// else	//SUCH A LUST FOR REVENGE!!!
+		// 	to_chat(M, "<span class='warning'>A phantom limb hurts!</span>")	// CELADON-EDIT - ORIGINAL
+		else
+			if(phain == 1)
+				if(selected_part != BODY_ZONE_R_ARM | selected_part != BODY_ZONE_L_LEG)		//SUCH A LUST FOR REVENGE!!!
+					phain = 0
+					to_chat(M, "<span class='warning'>A phantom limb hurts!</span>")
+					M.say("Why are we still here...", forced = /datum/reagent/medicine/lavaland_extract)
+					M.client.give_award(/datum/award/achievement/misc/theinnerhell, M)
+			else
+				return
+		// [/CELADON-EDIT]
 	return ..()
 
 /datum/reagent/medicine/skeletons_boon

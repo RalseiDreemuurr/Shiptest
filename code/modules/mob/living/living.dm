@@ -1410,6 +1410,32 @@
 	if(player_logged && stat != DEAD)
 		return TRUE
 
+// The above code is kept to prevent old SSD behavior from breaking, while the code below is dedicated to the SSD Indicator
+
+GLOBAL_VAR_INIT(ssd_indicator_overlay, mutable_appearance('icons/mob/ssd_indicator.dmi', "default0", RUNECHAT_PLANE))
+
+/mob/living
+	var/ssd_indicator = FALSE
+	var/lastclienttime = 0
+
+/mob/living/proc/set_ssd_indicator(state)
+	if(state == ssd_indicator)
+		return
+	ssd_indicator = state
+	if(ssd_indicator && stat != DEAD)
+		add_overlay(GLOB.ssd_indicator_overlay)
+	else
+		cut_overlay(GLOB.ssd_indicator_overlay)
+
+/mob/living/Login()
+	. = ..()
+	set_ssd_indicator(FALSE)
+
+/mob/living/Logout()
+	. = ..()
+	lastclienttime = world.time
+	set_ssd_indicator(TRUE)
+
 /mob/living/vv_get_header()
 	. = ..()
 	var/refid = REF(src)
@@ -1861,8 +1887,8 @@
 		last_state_of_bubble = state_of_bubble
 	// [/CELADON-ADD]
 	// [CELADON-EDIT] - CELADON_QOL
-	// var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/qol/icons/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE) // CELADON-EDIT - ORIGINAL
-	var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/qol/icons/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE)
+	// var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/qol/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE) // CELADON-EDIT - ORIGINAL
+	var/mutable_appearance/bubble_overlay = mutable_appearance('mod_celadon/_storge_icons/icons/qol/talk.dmi', state_of_bubble, plane = RUNECHAT_PLANE)
 	// [/CELADON-EDIT]
 	bubble_overlay.appearance_flags = RESET_COLOR | RESET_TRANSFORM | TILE_BOUND | PIXEL_SCALE
 	if(typing_indicator)

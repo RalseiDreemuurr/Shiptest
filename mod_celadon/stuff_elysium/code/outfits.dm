@@ -1,7 +1,7 @@
 /obj/item/card/id/elysium_com
 	name = "\improper Elysium Central Command access card"
 	desc = "An access card sourced from Elysium Central Command."
-	icon = 'mod_celadon/stuff_elysium/icons/obj/card.dmi'
+	icon = 'mod_celadon/_storge_icons/icons/obj/elysium_card.dmi'
 	icon_state = "elysium_com"
 	uses_overlays = FALSE
 	registered_age = null
@@ -103,7 +103,7 @@
 	name = "sleeper"
 	icon = 'icons/obj/machines/sleeper.dmi'
 	icon_state = "sleeper"
-	faction = "elysium"
+	faction = (FACTION_PLAYER_ELYSIUM)
 	short_desc = "You are a Avanpost Elysium Private Security Officer!"
 
 /datum/outfit/avanpost

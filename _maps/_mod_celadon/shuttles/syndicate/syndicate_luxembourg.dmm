@@ -206,7 +206,7 @@
 /obj/machinery/atmospherics/components/unary/outlet_injector/atmos/toxin_input{
 	dir = 1
 	},
-/turf/open/floor/engine/air,
+/turf/open/floor/engine/plasma,
 /area/ship/engineering)
 "dJ" = (
 /obj/structure/window/plasma/reinforced/spawner/west{
@@ -215,7 +215,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/siphon/atmos/toxin_output{
 	dir = 1
 	},
-/turf/open/floor/engine/air,
+/turf/open/floor/engine/plasma,
 /area/ship/engineering)
 "dK" = (
 /obj/machinery/vending/dinnerware,
@@ -352,6 +352,10 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
+"gk" = (
+/obj/machinery/holopad/emergency/command,
+/turf/open/floor/carpet/red_gold,
+/area/ship/hallway/central)
 "go" = (
 /obj/structure/rack,
 /obj/effect/turf_decal/corner/opaque/brown/border{
@@ -377,6 +381,9 @@
 	dir = 4
 	},
 /turf/open/floor/plating,
+/area/ship/engineering)
+"hn" = (
+/turf/open/floor/engine/plasma,
 /area/ship/engineering)
 "hR" = (
 /obj/machinery/door/firedoor/border_only{
@@ -404,6 +411,15 @@
 	},
 /turf/open/floor/plasteel/tech/techmaint,
 /area/ship/engineering)
+"hY" = (
+/obj/structure/chair/plastic,
+/obj/effect/turf_decal/corner/opaque/neutral/border,
+/obj/effect/turf_decal/siding/red{
+	dir = 1
+	},
+/obj/machinery/newscaster/directional/east,
+/turf/open/floor/plasteel/mono/dark,
+/area/ship/hallway/central)
 "iu" = (
 /obj/effect/turf_decal/siding/blue{
 	dir = 1
@@ -941,6 +957,10 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "pQ" = (
+/obj/structure/chair/comfy/shuttle{
+	dir = 4;
+	name = "Medical"
+	},
 /turf/open/floor/carpet/red_gold,
 /area/ship/hallway/central)
 "pV" = (
@@ -1295,6 +1315,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew/dorm)
 "xr" = (
@@ -1476,7 +1497,7 @@
 /area/ship/crew/dorm)
 "BO" = (
 /obj/machinery/air_sensor/atmos/toxin_tank,
-/turf/open/floor/engine/air,
+/turf/open/floor/engine/plasma,
 /area/ship/engineering)
 "BR" = (
 /obj/machinery/door/firedoor,
@@ -1738,6 +1759,7 @@
 "Gx" = (
 /obj/structure/table,
 /obj/item/radio/intercom/wideband/table,
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/hallway/central)
 "Gz" = (
@@ -1872,7 +1894,7 @@
 /area/ship/crew/dorm)
 "Jh" = (
 /obj/effect/turf_decal/atmos/plasma,
-/turf/open/floor/engine/air,
+/turf/open/floor/engine/plasma,
 /area/ship/engineering)
 "Jj" = (
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
@@ -1916,6 +1938,7 @@
 /obj/effect/turf_decal/corner/opaque/brown/border{
 	dir = 5
 	},
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "Kk" = (
@@ -2504,7 +2527,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "VL" = (
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /obj/machinery/button/door{
 	id = "syndiefuck";
 	name = "Loading Shutters Control";
@@ -2896,7 +2919,7 @@ CO
 ix
 rJ
 ds
-fg
+hn
 Jh
 Ob
 EK
@@ -3245,7 +3268,7 @@ DY
 WP
 DY
 lH
-Va
+hY
 Wc
 PP
 PP
@@ -3286,7 +3309,7 @@ Pi
 Zt
 Zt
 VL
-pQ
+gk
 Dk
 Zt
 Zt

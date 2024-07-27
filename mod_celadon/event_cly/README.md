@@ -61,12 +61,13 @@ ID мода: EVENT_CLY
   И то же самое, если ты используешь дефайны, определённые другим модом.
 
   Не используешь - напиши "Отсутствуют"
-  Примеры: `code/__defines/~mods/event_cly.dm`: `EVENT_CLY_SPEED_MULTIPLIER`, `EVENT_CLY_SPEED_BASE`
+  Примеры: `code/__defines/~mod_celadon/event_cly.dm`: `EVENT_CLY_SPEED_MULTIPLIER`, `EVENT_CLY_SPEED_BASE`
 -->
 
 ### Используемые файлы, не содержащиеся в модпаке
 
-- Отсутствуют
+- `mod_celadon/_storge_icons/icons/events`
+- `mod_celadon/_storge_sounds/sound/events`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

@@ -50,7 +50,7 @@ ID мода: CELADON_STUFF_ELYSIUM
 
 ### Дефайны
 
-- `code/__defines/~mods/example.dm`: `EXAMPLE_SPEED_MULTIPLIER`, `EXAMPLE_SPEED_BASE`
+- `code/__defines/~mod_celadon/example.dm`: `EXAMPLE_SPEED_MULTIPLIER`, `EXAMPLE_SPEED_BASE`
 <!--
   Если требовалось добавить какие-либо дефайны, укажи файлы,
   в которые ты их добавил, а также перечисли имена.
@@ -62,6 +62,7 @@ ID мода: CELADON_STUFF_ELYSIUM
 ### Используемые файлы, не содержащиеся в модпаке
 
 - `mods/_master_files/icons/obj/alien.dmi`
+- `mod_celadon/_storge_icons/icons`
 <!--
   Будь то немодульный файл или модульный файл, который не содержится в папке,
   принадлежащей этому конкретному моду, он должен быть упомянут здесь.

@@ -52,7 +52,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "bX" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 10
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -482,7 +482,12 @@
 /area/ship/bridge)
 "jZ" = (
 /obj/structure/closet/wall/directional/east,
-/obj/item/stack/sheet/mineral/uranium/twenty,
+/obj/item/stack/sheet/mineral/uranium/twenty{
+	amount = 30
+	},
+/obj/item/stack/sheet/mineral/uranium/twenty{
+	amount = 30
+	},
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ky" = (
@@ -496,7 +501,7 @@
 /turf/open/floor/plating,
 /area/ship/cargo)
 "lg" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 9
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -878,6 +883,7 @@
 	pixel_x = -7;
 	pixel_y = 3
 	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/office)
 "ud" = (
@@ -900,6 +906,7 @@
 	pixel_x = 10;
 	pixel_y = -20
 	},
+/obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "uk" = (
@@ -994,9 +1001,9 @@
 /turf/template_noop,
 /area/template_noop)
 "xc" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
+	pixel_x = 7;
 	dir = 4;
-	pixel_x = 8;
 	pixel_y = 4
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1211,6 +1218,7 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
+/obj/machinery/newscaster/directional/south,
 /turf/open/floor/plasteel/white,
 /area/ship/crew)
 "BY" = (
@@ -1282,7 +1290,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/crew)
 "Do" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 6
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1564,9 +1572,10 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "KS" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
+	pixel_x = 7;
 	dir = 4;
-	pixel_x = 8
+	pixel_y = 5
 	},
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
@@ -1706,6 +1715,15 @@
 "Om" = (
 /obj/structure/table/wood,
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
+/obj/item/camera,
+/obj/item/camera,
+/obj/item/camera,
+/obj/item/camera_film,
+/obj/item/camera_film,
+/obj/item/camera_film,
+/obj/item/taperecorder,
+/obj/item/taperecorder,
+/obj/item/taperecorder,
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew)
 "Oq" = (
@@ -1792,7 +1810,7 @@
 /obj/effect/turf_decal/spline/fancy/opaque/syndiered{
 	dir = 6
 	},
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/effect/turf_decal/industrial/outline/red,
@@ -1835,6 +1853,9 @@
 	},
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/machinery/light/small/directional/south,
+/obj/machinery/newscaster/directional/south{
+	pixel_x = -11
+	},
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "SE" = (
@@ -1962,7 +1983,7 @@
 /turf/open/floor/carpet/red_gold,
 /area/ship/crew)
 "WB" = (
-/obj/machinery/porta_turret/ship/syndicate/weak{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 5
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -2013,6 +2034,13 @@
 /obj/item/melee/classic_baton/telescopic,
 /obj/item/melee/classic_baton,
 /obj/item/melee/classic_baton,
+/obj/item/gun/energy/disabler,
+/obj/item/gun/energy/disabler,
+/obj/item/gun/ballistic/automatic/pistol/syndicate/no_mag,
+/obj/item/ammo_box/c10mm/rubbershot,
+/obj/item/ammo_box/magazine/m10mm/rubber,
+/obj/item/ammo_box/c10mm/ap,
+/obj/item/ammo_box/magazine/m10mm/ap,
 /turf/open/floor/plasteel/stairs{
 	dir = 4
 	},

@@ -252,7 +252,8 @@
 "kT" = (
 /obj/machinery/turretid{
 	dir = 8;
-	pixel_x = -32
+	pixel_x = -32;
+	req_access = null
 	},
 /obj/machinery/holopad,
 /obj/structure/cable{
@@ -297,6 +298,7 @@
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
 /obj/effect/decal/cleanable/dirt/dust,
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plating,
 /area/ship/cargo)
 "mO" = (
@@ -366,7 +368,6 @@
 /obj/structure/frame/computer{
 	dir = 8
 	},
-/obj/item/circuitboard/computer/cargo/express,
 /turf/open/floor/plasteel/tech,
 /area/ship/bridge)
 "oZ" = (
@@ -413,6 +414,9 @@
 	},
 /obj/machinery/atmospherics/components/unary/vent_pump/on/layer2,
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/machinery/newscaster/directional/west{
+	pixel_y = -7
+	},
 /turf/open/floor/plating,
 /area/ship/bridge)
 "qh" = (
@@ -471,6 +475,7 @@
 	pixel_x = 9;
 	name = "pizza slice"
 	},
+/obj/machinery/newscaster/directional/south,
 /turf/open/floor/carpet/green,
 /area/ship/crew/cryo)
 "tb" = (
@@ -594,6 +599,7 @@
 	dir = 9
 	},
 /obj/structure/catwalk/over/plated_catwalk/dark,
+/obj/item/circuitboard/computer/cargo,
 /turf/open/floor/plating,
 /area/ship/bridge)
 "wb" = (
@@ -614,7 +620,8 @@
 /obj/structure/fluff/clockwork/alloy_shards,
 /obj/effect/decal/cleanable/dirt/dust,
 /mob/living/simple_animal/hostile/retaliate/goose{
-	name = "Khasir"
+	name = "Khasir";
+	faction = list("playerElysium")
 	},
 /turf/open/floor/plating,
 /area/ship/cargo)
@@ -670,7 +677,6 @@
 /obj/item/clothing/suit/space/elysm/junk,
 /obj/item/clothing/head/space/elysm/space_helm,
 /obj/item/clothing/mask/breath,
-/obj/item/clothing/mask/bandana/black,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "ye" = (
@@ -752,7 +758,7 @@
 "yX" = (
 /obj/structure/catwalk,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret/ship/faction/elysium/laser/cover,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "zc" = (
@@ -1102,7 +1108,7 @@
 /turf/open/floor/plasteel/tech,
 /area/ship/crew/cryo)
 "MP" = (
-/obj/machinery/porta_turret,
+/obj/machinery/porta_turret/ship/faction/elysium/laser/cover,
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "MV" = (

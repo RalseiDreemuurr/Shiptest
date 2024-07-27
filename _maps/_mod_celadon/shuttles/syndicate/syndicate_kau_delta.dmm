@@ -199,7 +199,7 @@
 /turf/open/floor/plating,
 /area/ship/engineering)
 "ee" = (
-/obj/machinery/porta_turret/ship/syndicate,
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic,
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/bridge)
 "en" = (
@@ -212,6 +212,7 @@
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden/layer2{
 	dir = 4
 	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plating,
 /area/ship/engineering)
 "eC" = (
@@ -302,6 +303,7 @@
 /obj/item/storage/backpack/duffelbag/syndie,
 /obj/item/storage/backpack/duffelbag/syndie,
 /obj/item/storage/backpack/duffelbag/syndie,
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/carpet/black,
 /area/ship/crew/dorm)
 "ge" = (
@@ -417,7 +419,7 @@
 /turf/closed/wall/mineral/plastitanium/nodiagonal,
 /area/ship/bridge)
 "hC" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/border{
@@ -690,9 +692,6 @@
 	pixel_y = 10;
 	pixel_x = 6
 	},
-/obj/item/suppressor{
-	pixel_y = 3
-	},
 /obj/item/stock_parts/cell/high{
 	pixel_y = 11;
 	pixel_x = 7
@@ -938,7 +937,7 @@
 /turf/open/floor/mineral/plastitanium,
 /area/ship/hallway/central)
 "ud" = (
-/obj/machinery/porta_turret/ship/syndicate{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 8
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1158,7 +1157,7 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered,
 /obj/structure/table/reinforced,
 /obj/item/documents/syndicate/red{
-	pixel_y = 4
+	pixel_y = 3
 	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
@@ -1444,7 +1443,7 @@
 /turf/closed/wall/mineral/plastitanium,
 /area/ship/hallway/central)
 "Ei" = (
-/obj/machinery/porta_turret/ship/syndicate{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 4
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -1803,12 +1802,17 @@
 /obj/effect/turf_decal/spline/plain/opaque/syndiered{
 	dir = 9
 	},
-/obj/item/radio/intercom/wideband/directional/south,
+/obj/item/radio/intercom/wideband/directional/south{
+	pixel_x = 6
+	},
 /obj/machinery/computer/crew/syndie{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/syndiered/border{
 	dir = 6
+	},
+/obj/machinery/newscaster/directional/south{
+	pixel_x = -8
 	},
 /turf/open/floor/carpet/black,
 /area/ship/bridge)
@@ -2474,7 +2478,7 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/maintenance/port)
 "Xk" = (
-/obj/machinery/porta_turret/ship/syndicate{
+/obj/machinery/porta_turret/ship/faction/syndicate/ballistic{
 	dir = 1
 	},
 /turf/closed/wall/mineral/plastitanium,
@@ -2581,6 +2585,7 @@
 /obj/item/storage/box/donkpockets/donkpocketteriyaki,
 /obj/item/storage/box/donkpockets/donkpocketteriyaki,
 /obj/item/storage/cans/sixbeer,
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/dark,
 /area/ship/hallway/central)
 "Zo" = (

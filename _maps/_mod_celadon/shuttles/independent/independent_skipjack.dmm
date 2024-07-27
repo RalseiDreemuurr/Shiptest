@@ -877,6 +877,7 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/sofa/brown/corpo/right,
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/wood/walnut,
 /area/ship/crew)
 "sz" = (
@@ -1331,6 +1332,7 @@
 /obj/structure/fluff/paper/stack{
 	dir = 5
 	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/mono/dark,
 /area/ship/cargo)
 "DU" = (
@@ -2357,7 +2359,8 @@
 /turf/open/floor/plasteel/dark,
 /area/ship/bridge)
 "Wg" = (
-/obj/item/circuitboard/computer/cargo/express,
+/obj/structure/rack,
+/obj/item/circuitboard/computer/cargo,
 /turf/open/floor/plasteel/dark,
 /area/ship/security/armory)
 "Wh" = (
@@ -2496,6 +2499,7 @@
 /obj/item/seeds/potato,
 /obj/item/seeds/eggplant,
 /obj/item/seeds/watermelon,
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/plasteel/dark,
 /area/ship/crew/hydroponics)
 "YK" = (
@@ -3109,11 +3113,11 @@ Sc
 fa
 ll
 Il
-Wg
+KR
 eZ
 wD
 IP
-OR
+Wg
 gq
 Ix
 DU

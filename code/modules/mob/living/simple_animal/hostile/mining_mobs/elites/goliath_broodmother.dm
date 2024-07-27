@@ -29,8 +29,10 @@
 	pixel_x = -16
 	base_pixel_x = -16
 	health_doll_icon = "broodmother"
-	maxHealth = 800
-	health = 800
+	// [CELADON-REMOVE] - CELADON_BALANCE_MOBS
+	// maxHealth = 800
+	// health = 800
+	// [/CELADON-REMOVE]
 	melee_damage_lower = 30
 	melee_damage_upper = 30
 	armour_penetration = 30
@@ -142,6 +144,9 @@
 	ranged_cooldown = world.time + 70
 	playsound(src,'sound/spookoween/insane_low_laugh.ogg', 200, 1)
 	visible_message("<span class='warning'>[src] starts picking up speed!</span>")
+	// [CELADON-ADD] - CELADON_BALANCE_MOBS
+	childragecall = 1
+	// [/CELADON-ADD]
 	color = "#FF0000"
 	set_varspeed(0)
 	move_to_delay = 3
@@ -185,7 +190,6 @@
 	move_to_delay = 5
 	mob_biotypes = MOB_ORGANIC|MOB_BEAST
 	mouse_opacity = MOUSE_OPACITY_ICON
-	butcher_results = list()
 	guaranteed_butcher_results = list(/obj/item/stack/sheet/animalhide/goliath_hide = 1)
 	deathmessage = "falls to the ground."
 	status_flags = CANPUSH

@@ -1131,6 +1131,7 @@
 /area/ship/engineering)
 "mK" = (
 /obj/effect/turf_decal/corner/opaque/blue/mono,
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "mO" = (
@@ -1390,9 +1391,8 @@
 /turf/open/floor/carpet/blue,
 /area/ship/crew/dorm)
 "oI" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 8;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/faction/nanotrasen{
+	dir = 8
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -1568,7 +1568,8 @@
 "qq" = (
 /obj/machinery/porta_turret/ship/ballistic{
 	dir = 4;
-	faction = list("playerNanotrasen","turret")
+	faction = list("playerNanotrasen","turret");
+	pixel_x = 3
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -1887,9 +1888,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
 "ve" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 6;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/faction/nanotrasen{
+	dir = 6
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -2364,6 +2364,7 @@
 /obj/effect/turf_decal/corner/opaque/solgovblue{
 	dir = 9
 	},
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "zw" = (
@@ -2533,9 +2534,8 @@
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/hallway/central)
 "BD" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 9;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/faction/nanotrasen{
+	dir = 10
 	},
 /turf/closed/wall/mineral/titanium/nodiagonal,
 /area/ship/bridge)
@@ -3006,6 +3006,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
+"GP" = (
+/obj/machinery/porta_turret/ship/faction/nanotrasen{
+	dir = 1
+	},
+/turf/closed/wall/mineral/titanium,
+/area/ship/bridge)
 "GY" = (
 /obj/structure/railing{
 	dir = 4
@@ -3177,6 +3183,7 @@
 	dir = 6
 	},
 /obj/structure/chair/sofa/grey/left/directional/west,
+/obj/machinery/newscaster/directional/east,
 /turf/open/floor/plasteel/white,
 /area/ship/medical)
 "Ji" = (
@@ -3248,9 +3255,8 @@
 /turf/open/floor/plasteel/white,
 /area/ship/cargo)
 "JZ" = (
-/obj/machinery/porta_turret/ship/ballistic{
-	dir = 5;
-	faction = list("playerNanotrasen","turret")
+/obj/machinery/porta_turret/ship/faction/nanotrasen{
+	dir = 5
 	},
 /turf/closed/wall/mineral/titanium,
 /area/ship/bridge)
@@ -3732,7 +3738,7 @@
 /obj/item/toy/plush/lizardplushie{
 	pixel_x = 14
 	},
-/obj/machinery/computer/cargo/express,
+/obj/machinery/computer/cargo,
 /turf/open/floor/plasteel/white,
 /area/ship/bridge)
 "Ps" = (
@@ -4138,6 +4144,12 @@
 /obj/structure/fluff/hedge/opaque,
 /turf/open/floor/plasteel/white,
 /area/ship/hallway/central)
+"SZ" = (
+/obj/machinery/porta_turret/ship/faction/nanotrasen{
+	dir = 9
+	},
+/turf/closed/wall/mineral/titanium/nodiagonal,
+/area/ship/bridge)
 "Ta" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -4766,7 +4778,7 @@ fa
 fa
 fa
 fa
-BD
+SZ
 yz
 kl
 XT
@@ -4933,7 +4945,7 @@ fa
 fa
 fa
 fa
-Nt
+GP
 lI
 Ik
 du

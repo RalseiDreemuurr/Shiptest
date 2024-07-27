@@ -542,6 +542,7 @@
 "rx" = (
 /obj/machinery/vending/clothing,
 /obj/machinery/firealarm/directional/south,
+/obj/machinery/newscaster/directional/west,
 /turf/open/floor/carpet,
 /area/ship/crew/dorm)
 "rV" = (
@@ -622,14 +623,19 @@
 /turf/open/floor/plasteel/mono,
 /area/ship/engineering)
 "ws" = (
-/obj/machinery/computer/cargo/express{
+/obj/machinery/computer/cargo{
 	dir = 8
 	},
 /obj/effect/turf_decal/corner/opaque/blue/three_quarters,
 /obj/machinery/button/door{
 	dir = 1;
 	pixel_y = -23;
-	id = "bridge"
+	id = "bridge";
+	pixel_x = -6
+	},
+/obj/machinery/newscaster/directional/south{
+	pixel_x = 7;
+	pixel_y = -35
 	},
 /turf/open/floor/plasteel,
 /area/ship/bridge)
@@ -696,6 +702,7 @@
 /obj/machinery/microwave{
 	pixel_y = 5
 	},
+/obj/machinery/newscaster/directional/north,
 /turf/open/floor/plasteel,
 /area/ship/hallway/central)
 "zu" = (
